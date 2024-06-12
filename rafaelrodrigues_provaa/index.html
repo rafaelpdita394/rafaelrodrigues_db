@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Fotografia Gelada</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="fotos, imagens, beleza, natureza, mundo, lugares, paisagens">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fotografia Gelada</h1>
+        <button id="loginButton" style="float: right; background-color: black; color: white; font-family: Arial; margin-top: -35px;">Login</button>
+    </header>
+    <section>
+        <hr>
+        <h2>Home</h2>
+        <hr id="hrdois">
+    </section>
+    <main>
+        <section>
+            <figure class="fotografias">
+                <img src="Imagens/AlpesSuiços.jpg" alt="AlpesSuiços.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/Everest.jpg" alt="Everest.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/GrandCanyon.jpg" alt="GrandCanyon.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/Huandoy.jpg" alt="Huandoy.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/MonteBranco.jpg" alt="MonteBranco.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/MonteElbrus.jpg" alt="MonteElbrus.jpg" class="photo">
+            </figure>
+
+            <figure class="fotografias">
+                <img src="Imagens/PicoPikes.jpg" alt="PicoPikes.jpg" class="photo">
+            </figure>
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="cancelButton">&times;</span>
+            <h2>Login</h2>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <button id="enterButton">Entrar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Foto -->
+    <div id="photoModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="closePhotoModal">&times;</span>
+            <img id="modalPhoto" src="" alt="">
+            <div class="interaction">
+                <div style="float: left;">
+                    <span id="likeButton" class="heart"></span>
+                    <span id="likeCount">0</span> Curtidas
+                </div>
+                <div style="float: right;">
+                    <span id="commentButton" class="comment"></span>
+                    <span id="commentCount">0</span> Comentários
+                </div>
+            </div>
+            <div class="comment-section">
+                <input type="text" id="commentInput" placeholder="Adicionar um comentário">
+                <button id="submitComment">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Fotografia Gelada</h2>
+            </div>
+            <div class="footer-text">
+                <p>Copyright - 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

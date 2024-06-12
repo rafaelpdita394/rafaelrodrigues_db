@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+@font-face {
+    font-family: 'Concert One';
+    src: url('fonts/ConcertOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    min-width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(229, 226, 226);
+    background-color: #f4f4f3;
+}
+
+body > header {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+body > header > h1 {
+    color: #161616;
+    font-family: 'Concert One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2vh;
+}
+
+main {
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
+}
+
+header > section > hr {
+    opacity: 0.4;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.fotografias {
+    display: inline-flex;
+    margin: 10px auto;
+    -webkit-box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+    -moz-box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+    box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+}
+
+.fotografias a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.fotografias img {
+    width: 350px;
+    height: 250px;
+}
+
+.fotografias figcaption {
+    padding: 5px;
+}
+
+body > footer {
+    border-top: 1px solid #000;
+    opacity: 0.4;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+body > footer a {
+    text-decoration: none;
+}
+
+
+body > footer:hover {
+    color: #000000;
+    opacity: 1;
+} 
+
+.fotografias:hover img{
+    transform: scale(1.1);
+    -webkit-box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+    -moz-box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+    box-shadow: 8px 9px 12px -1px rgba(15,25,29,0.6);
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 360px) {  
+    .fotografias:hover img {
+    transform: scale(1); }
+}
+
+/* Estilos CSS 2 */
+
+button {
+    padding: 10px 60px;
+    cursor: pointer;
+    top: 30px; 
+    right: 10px; 
+    background-color: #161616;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+}
+
+body > section {
+    position: relative; /* Necessário para ajustes de posicionamento */
+}
+body > section > h2 {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+body > section > hr {
+    width: 98.5vw; /* Largura do hr */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 10px auto; /* Espaçamento acima do hr */
+}
+
+body > section > #hrdois {
+    width: 98.5vw; /* Largura do hr */
+    margin: 10px auto; /* Centraliza horizontalmente e adiciona espaçamento */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.interaction {
+    margin-top: 10px;
+}
+
+.heart,
+.comment {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.heart {
+    background-image: url('heart-filled.png');
+}
+
+.heart.filled {
+    background-image: url('heart.png');
+}
+
+.comment {
+    background-image: url('comment.png');
+}
+
+.comment-section {
+    margin-top: 10px;
+}
+
+.comment-section input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.comment-section button {
+    padding: 10px;
+}
+
+.footer-logo > h2 {
+    font-family: 'Concert One', Arial, Helvetica, sans-serif;
+}
